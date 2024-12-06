@@ -4,37 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="images/logo.jpg" />
-    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/main.min.css" />
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
   </head>
   <body>
-    <nav id="nav" class="clearfix">
+    <nav id="nav">
       <div class="nav-container container">
         <div class="row">
+          <div class="col col-12">
+            <div class="diverity-wrap"></div>
+          </div>
           <div class="col col-2">
-            <div class="img-wrap">
-              <img src="images/logo.svg" alt="" />
+            <div class="name-wrap">
+              <p class="title">MMUE</p>
+              <p class="subtitle">Muzea <br />migracji w UE</p>
             </div>
           </div>
           <div class="col col-10">
             <ul class="menu d-none d-md-block">
-              <li><a href="#">Strona główna</a></li>
-              <li><a href="#">o nas</a></li>
-              <li class="menu-item-has-children">
-                <a href="#">usługi</a>
-                <ul class="sub-menu">
-                  <li><a href="#">Menu1</a></li>
-                  <li><a href="#">Menu2</a></li>
-                  <li><a href="#">Menu3</a></li>
-                  <li><a href="#">Menu4</a></li>
-                  <li><a href="#">Menu5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">realizacje</a></li>
-              <li><a href="#">kariera</a></li>
+              <li><a href="#">O projekcie</a></li>
+              <li><a href="#">O Autorce</a></li>
+              <li><a href="#">wizyty studyjne</a></li>
               <li><a href="#">kontakt</a></li>
+              <li><a href="#">rekomendacje</a></li>
             </ul>
             <div
               class="hamburger hamburger--spin d-inline-block d-md-none"
@@ -55,80 +54,74 @@
         </div>
         <div class="menu-bg-wrap">
           <ul class="mobile-menu">
-            <li><a href="#">Strona główna</a></li>
-            <li><a href="#">o nas</a></li>
-            <li class="menu-item-has-children">
-              <a href="#">usługi</a>
-              <ul class="sub-menu">
-                <li><a href="#">Menu1</a></li>
-                <li><a href="#">Menu2</a></li>
-                <li><a href="#">Menu3</a></li>
-                <li><a href="#">Menu4</a></li>
-                <li><a href="#">Menu5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">realizacje</a></li>
-            <li><a href="#">kariera</a></li>
+            <li><a href="#">O projekcie</a></li>
+            <li><a href="#">O Autorce</a></li>
+            <li><a href="#">wizyty studyjne</a></li>
             <li><a href="#">kontakt</a></li>
+            <li><a href="#">rekomendacje</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="top">
+    <section class="blog-posts">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-md-4">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloribus dolor nisi deleniti accusantium tenetur iste et incidunt
-              enim, aliquam excepturi quod non explicabo, eos sed iusto, tempore
-              sapiente placeat maiores!
+              tu może być menu, inne treści czy też możemy rozciągnąć posty na
+              całą szerokość
             </p>
           </div>
-          <div class="col col-12 col-md-4">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
-              iure minima eveniet natus dicta id sit eum mollitia ea
-              accusantium, at atque voluptatibus vero? Hic molestiae aspernatur
-              corporis eius exercitationem.
-            </p>
-          </div>
-          <div class="col col-12 col-md-4">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Architecto est a explicabo et velit corporis veniam reiciendis
-              laudantium similique excepturi, recusandae, earum eius aspernatur
-              sint fugit. Atque, asperiores, cupiditate. In!
-            </p>
+          <div class="col col-12 col-md-8">
+            <div class="row">
+              <div class="col col-12 col-md-6">
+                <a href="" class="post-wrap">
+                  <img src="images/museum-2.jpg" alt="" />
+                  <div class="text-wrap">
+                    <p class="header">tytuł posta</p>
+                    <p>czytaj dalej</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <ul class="tabs-nav">
-      <li data-tab="tab-1" class="active">Tab 1</li>
-      <li data-tab="tab-2">Tab 2</li>
-      <li data-tab="tab-3">Tab 3</li>
-    </ul>
-    <div class="tabs">
-      <div class="tab" id="tab-1">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam,
-        error.
+    <section class="info">
+      <div class="container">
+        <div class="row footer-top">
+          <div class="col col-12 col-md-4">
+            <p>Kamila Kowalska</p>
+            <p>Kamila Kowalska</p>
+            <p>Kamila Kowalska</p>
+          </div>
+          <div class="col col-12 col-md-4">
+            <p>Gdańsk</p>
+            <p>6681230823</p>
+          </div>
+          <div class="col col-12 col-md-4"></div>
+        </div>
       </div>
-      <div class="tab" id="tab-2" style="display: none">
-        Lorem ipsum dolor sit amet.
-      </div>
-      <div class="tab" id="tab-3" style="display: none">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-        laudantium nostrum facere ullam nobis commodi vel, architecto corporis
-        laborum repellat quisquam sint voluptas illum beatae.
-      </div>
-    </div>
+    </section>
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="col col-12 col-md-4"></div>
-          <div class="col col-12 col-md-4"></div>
-          <div class="col col-12 col-md-4"></div>
+        <div class="row footer-bottom">
+          <div class="col col-12 col-md-4">
+            <div class="logo-wrap">
+              <img src="images/kpo.png" alt="" />
+            </div>
+          </div>
+          <div class="col col-12 col-md-4">
+            <div class="logo-wrap">
+              <img src="images/eu.png" alt="" />
+            </div>
+          </div>
+          <div class="col col-12 col-md-4">
+            <div class="logo-wrap">
+              <img src="images/kpo.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </footer>
