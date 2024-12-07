@@ -1,4 +1,5 @@
 .blog-posts {
+  margin-bottom: 60px;
   .col {
     overflow: hidden;
   }
@@ -35,6 +36,54 @@
       .text-wrap {
         bottom: 0;
         background-color: rgba($color: #ff852e, $alpha: 1);
+      }
+    }
+  }
+  .menu:not(.mobile-menu) {
+    list-style: none;
+    li {
+      a {
+        display: block;
+        @include font-size(20);
+        @include line-height(24);
+        margin-bottom: 12px;
+        @include uppercase;
+        @include easy-transform-fast;
+        color: $black;
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          @include easy-transform-fast;
+          width: fit-content;
+          bottom: 0px;
+          height: 2px;
+          background: $museum-orange;
+          left: -50px;
+          opacity: 0;
+          width: 50%;
+        }
+      }
+      &:hover {
+        a {
+          color: $museum-orange;
+          &::after {
+            left: 0;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .sub-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: $black;
+      li {
+        a {
+          color: $white;
+        }
       }
     }
   }

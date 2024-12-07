@@ -466,6 +466,9 @@ footer {
   color: #fff;
 }
 
+.blog-posts {
+  margin-bottom: 60px;
+}
 .blog-posts .col {
   overflow: hidden;
 }
@@ -508,4 +511,52 @@ footer {
 .blog-posts .post-wrap:hover .text-wrap {
   bottom: 0;
   background-color: #ff852e;
+}
+.blog-posts .menu:not(.mobile-menu) {
+  list-style: none;
+}
+.blog-posts .menu:not(.mobile-menu) li a {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #000;
+  position: relative;
+}
+.blog-posts .menu:not(.mobile-menu) li a::after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+  bottom: 0px;
+  height: 2px;
+  background: #ff852e;
+  left: -50px;
+  opacity: 0;
+  width: 50%;
+}
+.blog-posts .menu:not(.mobile-menu) li:hover a {
+  color: #ff852e;
+}
+.blog-posts .menu:not(.mobile-menu) li:hover a::after {
+  left: 0;
+  opacity: 1;
+}
+.blog-posts .menu:not(.mobile-menu) .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+}
+.blog-posts .menu:not(.mobile-menu) .sub-menu li a {
+  color: #fff;
 }/*# sourceMappingURL=main.min.css.map */
