@@ -10,6 +10,7 @@ nav {
   }
   .menu:not(.mobile-menu) {
     list-style: none;
+    justify-content: flex-end;
     li {
       float: right;
       a {

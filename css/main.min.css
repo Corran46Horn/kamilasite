@@ -195,7 +195,8 @@ p {
   text-align: right;
 }
 
-.bold {
+.bold,
+strong {
   font-weight: 700;
 }
 
@@ -293,6 +294,7 @@ nav .name-wrap {
 }
 nav .menu:not(.mobile-menu) {
   list-style: none;
+  justify-content: flex-end;
 }
 nav .menu:not(.mobile-menu) li {
   float: right;
@@ -461,9 +463,45 @@ footer {
   max-height: 150px;
 }
 
-.info {
+.about-header {
+  padding: 60px 0;
+}
+.about-header .col {
+  margin: 0 0 60px;
+}
+.about-header .img-wrap img {
+  max-height: 450px;
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+.about-header .text-wrap.objective {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  padding: 0 30px;
+}
+.about-header .text-wrap.objective strong {
+  text-transform: uppercase;
+}
+.about-header .text-wrap.objective p {
+  position: relative;
+  z-index: 5;
+}
+.about-header .text-wrap.objective::after {
+  content: "";
+  position: absolute;
   background-color: #ff852e;
-  color: #fff;
+  bottom: -5%;
+  left: -40%;
+  width: 125%;
+  height: 50px;
+}
+.about-header .text-wrap.objective.targets::after {
+  background-color: #053d78;
+  bottom: -15%;
 }
 
 .blog-posts {
@@ -559,4 +597,13 @@ footer {
 }
 .blog-posts .menu:not(.mobile-menu) .sub-menu li a {
   color: #fff;
+}
+
+.info {
+  background-color: #ff852e;
+  color: #fff;
+}
+
+.text-section {
+  margin-bottom: 60px;
 }/*# sourceMappingURL=main.min.css.map */
