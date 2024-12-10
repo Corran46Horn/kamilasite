@@ -457,12 +457,6 @@ footer {
   position: relative;
   background-color: #fff;
 }
-.footer-bottom .logo-wrap img {
-  object-fit: cover;
-  max-width: 350px;
-  max-height: 150px;
-}
-
 .about-header {
   padding: 60px 0;
 }
