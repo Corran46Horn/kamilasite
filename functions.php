@@ -6,7 +6,6 @@ function register_theme_menus() {
     array(
       'main' => __('Main', 'kornel'),
       'footer' => __('Footer', 'kornel'),
-      'menu-lang' => __('Language Menu', 'kornel'),
     )
   );
 }
