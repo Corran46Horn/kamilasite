@@ -291,6 +291,8 @@ nav {
 }
 nav .name-wrap {
   padding: 21px 0;
+  display: block;
+  color: #000;
 }
 nav .menu:not(.mobile-menu) {
   list-style: none;

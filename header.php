@@ -22,10 +22,10 @@
             <div class="diverity-wrap"></div>
           </div>
           <div class="col col-2">
-            <div class="name-wrap">
+            <a class="name-wrap" href="<?php echo home_url();?>">
               <p class="title">MMUE</p>
               <p class="subtitle">Muzea <br />migracji w UE</p>
-            </div>
+            </a>
           </div>
           <div class="col col-10">
             <?php wp_nav_menu(array(
