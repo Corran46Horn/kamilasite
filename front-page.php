@@ -13,7 +13,7 @@
             $query->the_post();
             $post_ID = get_the_ID();
       ?>
-      <div class="col col-12 col-md-6">
+      <div class="col col-12 col-lg-6">
         <a href="<?php the_permalink(); ?>" class="post-wrap">
           <?php
             if(has_post_thumbnail()){

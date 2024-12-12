@@ -148,6 +148,7 @@ html {
   font-family: 'Roboto', sans-serif;
   position: relative;
   max-width: 100%;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -225,9 +226,15 @@ p {
   }
 }
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   max-width: 1400px;
+  @include devices(medium) {
+    width: 80%;
+  }
+}
+.mobile-container {
+  width: 90%;
 }
 .align-center {
   text-align: center;

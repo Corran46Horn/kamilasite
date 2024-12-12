@@ -1,8 +1,5 @@
 nav {
   background-color: $white;
-  position: sticky;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 99;
   .name-wrap {
@@ -13,6 +10,7 @@ nav {
   .menu:not(.mobile-menu) {
     list-style: none;
     justify-content: flex-end;
+    flex-wrap: wrap;
     li {
       float: right;
       a {
@@ -61,15 +59,15 @@ nav {
       }
     }
   }
-  .hamburger-inner,
-  .hamburger-inner::after,
-  .hamburger-inner::before {
-    @include borderRadius(0px);
+  .hamburger {
+    position: absolute;
+    top: 15px;
+    right: 0;
   }
 }
 .sidenav {
   position: fixed;
-  background-color: #000;
+  background-color: $white;
   height: 100vh;
   width: 100%;
   top: 0;
@@ -86,27 +84,7 @@ nav {
     .hamburger-inner,
     .hamburger-inner::after,
     .hamburger-inner::before {
-      background-color: $white;
-    }
-  }
-  .top-wrap {
-    overflow: hidden;
-    border-bottom: 1px solid #303030;
-    a.logo-wrap {
-      display: block;
-      float: left;
-      height: 45px;
-      width: 100px;
-      margin-top: 25px;
-      margin-bottom: 25px;
-      margin-left: 40px;
-      img,
-      svg {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        fill: $white;
-      }
+      background-color: $black;
     }
   }
   .menu-bg-wrap {
@@ -123,26 +101,15 @@ nav {
       li {
         float: none;
         display: block;
-        border-bottom: 1px solid #303030;
         padding: 10px 0;
-        &.menu-item-has-children {
-          position: relative;
-          > a {
-            padding-right: 90px;
-          }
-        }
         a {
+          color: $black;
           text-align: left;
-          font-size: 1rem;
-          line-height: 1.5rem;
           font-weight: 400;
-          color: $white;
-          padding: 10px 24px 10px 40px;
+          padding: 15px 0;
           display: block;
           @include easy-transform-fast;
-          &:hover {
-            background-color: $black;
-          }
+          @include uppercase;
         }
       }
     }

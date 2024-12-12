@@ -77,6 +77,7 @@ html {
   font-family: "Roboto", sans-serif;
   position: relative;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 img {
@@ -182,9 +183,18 @@ p {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   max-width: 1400px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.mobile-container {
+  width: 90%;
 }
 
 .align-center {
@@ -283,9 +293,6 @@ strong {
 
 nav {
   background-color: #fff;
-  position: sticky;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 99;
 }
@@ -297,6 +304,7 @@ nav .name-wrap {
 nav .menu:not(.mobile-menu) {
   list-style: none;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 nav .menu:not(.mobile-menu) li {
   float: right;
@@ -347,17 +355,15 @@ nav .menu:not(.mobile-menu) .sub-menu {
 nav .menu:not(.mobile-menu) .sub-menu li a {
   color: #fff;
 }
-nav .hamburger-inner,
-nav .hamburger-inner::after,
-nav .hamburger-inner::before {
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
+nav .hamburger {
+  position: absolute;
+  top: 15px;
+  right: 0;
 }
 
 .sidenav {
   position: fixed;
-  background-color: #000;
+  background-color: #fff;
   height: 100vh;
   width: 100%;
   top: 0;
@@ -379,27 +385,7 @@ nav .hamburger-inner::before {
 .sidenav .hamburger .hamburger-inner,
 .sidenav .hamburger .hamburger-inner::after,
 .sidenav .hamburger .hamburger-inner::before {
-  background-color: #fff;
-}
-.sidenav .top-wrap {
-  overflow: hidden;
-  border-bottom: 1px solid #303030;
-}
-.sidenav .top-wrap a.logo-wrap {
-  display: block;
-  float: left;
-  height: 45px;
-  width: 100px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: 40px;
-}
-.sidenav .top-wrap a.logo-wrap img,
-.sidenav .top-wrap a.logo-wrap svg {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  fill: #fff;
+  background-color: #000;
 }
 .sidenav .menu-bg-wrap {
   background-position: left bottom;
@@ -420,30 +406,19 @@ nav .hamburger-inner::before {
 .sidenav .menu-bg-wrap .mobile-menu li {
   float: none;
   display: block;
-  border-bottom: 1px solid #303030;
   padding: 10px 0;
 }
-.sidenav .menu-bg-wrap .mobile-menu li.menu-item-has-children {
-  position: relative;
-}
-.sidenav .menu-bg-wrap .mobile-menu li.menu-item-has-children > a {
-  padding-right: 90px;
-}
 .sidenav .menu-bg-wrap .mobile-menu li a {
+  color: #000;
   text-align: left;
-  font-size: 1rem;
-  line-height: 1.5rem;
   font-weight: 400;
-  color: #fff;
-  padding: 10px 24px 10px 40px;
+  padding: 15px 0;
   display: block;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-.sidenav .menu-bg-wrap .mobile-menu li a:hover {
-  background-color: #000;
+  text-transform: uppercase;
 }
 
 footer {
