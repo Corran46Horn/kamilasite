@@ -21,20 +21,20 @@
           <div class="col col-12">
             <div class="diverity-wrap"></div>
           </div>
-          <div class="col col-2">
+          <div class="col col-10 col-lg-2">
             <a class="name-wrap" href="<?php echo home_url();?>">
               <p class="title">MMUE</p>
               <p class="subtitle">Muzea <br />migracji w UE</p>
             </a>
           </div>
-          <div class="col col-10">
+          <div class="col col-2 col-lg-10">
             <?php wp_nav_menu(array(
               'theme_location' => 'main',
-              'menu_class' => 'menu d-none d-md-flex',
+              'menu_class' => 'menu d-none d-lg-flex',
               'container' => '',
             )); ?>
             <div
-              class="hamburger hamburger--spin d-inline-block d-md-none"
+              class="hamburger hamburger--spin d-inline-block d-lg-none"
               type="button"
             >
               <span class="hamburger-box">
@@ -44,18 +44,30 @@
           </div>
         </div>
       </div>
-      <div id="mySidenav" class="sidenav d-block d-md-none">
-        <div class="hamburger hamburger--spin" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </div>
-        <div class="menu-bg-wrap">
-          <?php wp_nav_menu(array(
-            'theme_location' => 'main',
-            'menu_class' => 'mobile-menu',
-            'container' => '',
-          )); ?>
+      <div id="mySidenav" class="sidenav d-block d-lg-none">
+        <div class="container">
+          <div class="row">
+            <div class="col col-10">
+              <a class="name-wrap" href="<?php echo home_url();?>">
+                <p class="title">MMUE</p>
+                <p class="subtitle">Muzea <br />migracji w UE</p>
+              </a>
+            </div>
+            <div class="col col-2">
+              <div class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-bg-wrap">
+            <?php wp_nav_menu(array(
+              'theme_location' => 'main',
+              'menu_class' => 'mobile-menu',
+              'container' => '',
+            )); ?>
+          </div>
         </div>
       </div>
     </nav>
