@@ -260,3 +260,13 @@ strong {
   @include font-size(24);
   @include line-height(20);
 }
+
+.single-section {
+  padding: 60px 0;
+}
+.title-wrap {
+  margin-bottom: 60px;
+}
+.page-section {
+  padding: 60px 0;
+}

@@ -42,5 +42,30 @@
         }
       }
     }
+    &.column {
+      flex-direction: column;
+      justify-content: center;
+      align-items: normal;
+    }
+    ul {
+      li {
+        font-family: 'Roboto', sans-serif;
+        position: relative;
+        @include font-size(18);
+        @include line-height(28);
+        margin-bottom: 5px;
+        padding: 0 0 0 20px;
+        &::before {
+          position: absolute;
+          content: '';
+          height: 10px;
+          width: 10px;
+          border-radius: 50%;
+          background-color: $university-blue;
+          left: 0;
+          top: 9px;
+        }
+      }
+    }
   }
 }

@@ -226,6 +226,18 @@ strong {
   line-height: 1.25rem;
 }
 
+.single-section {
+  padding: 60px 0;
+}
+
+.title-wrap {
+  margin-bottom: 60px;
+}
+
+.page-section {
+  padding: 60px 0;
+}
+
 /* @include font-face('Corbel', '../fonts/Corbel Bold Italic.ttf', 700, 'italic');
 @include font-face('Corbel', '../fonts/Corbel Bold.ttf', 700);
 @include font-face('Corbel', '../fonts/Corbel Italic.ttf', 400, 'italic');
@@ -425,7 +437,10 @@ footer {
   background-color: #fff;
 }
 
-.footer-top,
+.footer-top {
+  padding: 30px 0 15px;
+}
+
 .footer-bottom {
   padding: 50px 0;
 }
@@ -474,6 +489,29 @@ footer {
 .about-header .text-wrap.objective.targets::after {
   background-color: #053d78;
   bottom: -15%;
+}
+.about-header .text-wrap.column {
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+}
+.about-header .text-wrap ul li {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 5px;
+  padding: 0 0 0 20px;
+}
+.about-header .text-wrap ul li::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #053d78;
+  left: 0;
+  top: 9px;
 }
 
 .blog-posts {

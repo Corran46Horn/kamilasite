@@ -3,6 +3,9 @@
 get_header(); 
 
 ?>
+<div class="title-wrap">
+  <h1 class="title"><?php echo get_the_title(  ); ?></h1>
+</div>
 <section class="about-header">
   <div class="container">
     <div class="row">
@@ -43,7 +46,8 @@ get_header();
         $args = array(
           'post_type' => 'visits',
           'posts_per_page' => 8,
-          'order' => 'ASC',
+          'orderby' => 'title', 
+          'order' => 'DESC',
         );
         $query = new WP_Query( $args );
         if( $query->have_posts() ){ 

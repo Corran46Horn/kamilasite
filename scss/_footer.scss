@@ -1,7 +1,9 @@
 footer {
   background-color: $white;
 }
-.footer-top,
+.footer-top {
+  padding: 30px 0 15px;
+}
 .footer-bottom {
   padding: 50px 0;
 }
