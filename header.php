@@ -16,6 +16,86 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/js-cookie@rc"></script>
   </head>
   <body>
+  <div class="accessibility-wrap">
+      <div class="container">
+        <div class="font-wrapper wcag-wrap">
+          <div class="fonts">
+            <ul class="font-list">
+              <p>Czcionka:</p>
+              <li>
+                <a
+                  href=""
+                  class="wcag-font-size wcag-font-size-1"
+                  title="Czcionka domyślna"
+                >
+                  <img
+                    class="fontDefault"
+                    src="<?php echo get_template_directory_uri(); ?>/images/font-icon.svg"
+                    alt="Czcionka domyślna"
+                  />
+                  <img
+                    class="fontDefault contrast"
+                    src="<?php echo get_template_directory_uri(); ?>/images/font-icon.svg"
+                    alt="Czcionka domyślna"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="wcag-font-size wcag-font-size-2"
+                  title="Czcionka średnia"
+                >
+                  <img
+                    class="fontDefault"
+                    src="<?php echo get_template_directory_uri(); ?>/images/font-icon.svg"
+                    alt="Czcionka średnia"
+                  />
+                  <img
+                    class="fontDefault contrast"
+                    src="<?php echo get_template_directory_uri(); ?>/images/font-icon.svg"
+                    alt="Czcionka średnia"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="wcag-font-size wcag-font-size-3"
+                  title="Czcionka duża"
+                >
+                  <img
+                    class="fontDefault"
+                    src="<?php echo get_template_directory_uri(); ?>/images/font-icon.svg"
+                    alt="Czcionka duża"
+                  />
+                  <img
+                    class="fontDefault contrast"
+                    src="<?php echo get_template_directory_uri(); ?>/images/font-icon.svg"
+                    alt="Czcionka duża"
+                  />
+                </a>
+              </li>
+              <li class="font-contrast">
+                <p>Kontrast</p>
+                <a class="contrast" id="contrast-btn-pc" title="Zmień kontrast">
+                  <img
+                    class="fontDefault"
+                    src="<?php echo get_template_directory_uri(); ?>/images/contrast.png"
+                    alt="Zmień kontrast"
+                  />
+                  <img
+                    class="fontDefault contrast"
+                    src="<?php echo get_template_directory_uri(); ?>/images/contrast.png"
+                    alt="Zmień kontrast"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <nav id="nav">
       <div class="container nav-container">
         <div class="row">

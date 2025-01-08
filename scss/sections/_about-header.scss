@@ -26,6 +26,15 @@
         position: relative;
         z-index: 5;
       }
+
+      &.targets {
+        &::after {
+          background-color: $university-blue;
+          bottom: -15%;
+        }
+      }
+    }
+    &.after {
       &::after {
         content: '';
         position: absolute;
@@ -35,12 +44,6 @@
         width: 125%;
         height: 50px;
       }
-      &.targets {
-        &::after {
-          background-color: $university-blue;
-          bottom: -15%;
-        }
-      }
     }
     &.column {
       flex-direction: column;
@@ -48,6 +51,8 @@
       align-items: normal;
     }
     ul {
+      position: relative;
+      z-index: 5;
       li {
         font-family: 'Roboto', sans-serif;
         position: relative;

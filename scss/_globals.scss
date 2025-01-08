@@ -12,6 +12,7 @@ $white: #fff;
 $black: #000;
 $university-blue: #053d78;
 $museum-orange: #ff852e;
+$gray: #808080;
 
 @mixin font-face($name, $path, $weight: normal, $style: normal) {
   @font-face {

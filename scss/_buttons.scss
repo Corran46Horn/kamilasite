@@ -1,60 +1,21 @@
-.btn, .btn:link, .btn:focus, .btn:visited{
+.btn,
+.btn:link,
+.btn:focus,
+.btn:visited,
+.wp-element-button {
   position: relative;
   display: inline-block;
   background-color: transparent;
-  border: 2px solid $black;
-  color: $black;
-  padding: 14px 16px 12px 16px;
-  @include font-size(15);
-  @include line-height(21);
+  padding: 0 10px;
+  background: transparent;
+  border: 1px solid $university-blue;
+  line-height: 1.125rem;
   font-weight: 700;
   @include easy-transform-fast;
-  //text-transform: uppercase;
   overflow: hidden;
   text-decoration: none;
-  &:hover{
-    color: $white;
-    background-color: $black;
-  }
-  &[target="_blank"]{
-    position: relative;
-    padding-right: 45px;
-    &:hover{
-        &::after{
-            background-image: url(../images/external_link_white.svg);
-        }
-    }
-    &::after{
-        position: absolute;
-        content: "";
-        display: block;
-        width: 16px;
-        height: 16px;
-        background-image: url(../images/external_link_red.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        right: 18px;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-  }
-  &.black{
-    border: 2px solid $black;
-    color: $black;
-    &:hover{
-      color: $white;
-      background-color: $black;
-    }
-  }
-  span{
-    vertical-align: middle;
-  }
-  svg{
-    margin-left: 10px;
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
+  &:hover {
+    color: $museum-orange;
+    border: 1px solid $museum-orange;
   }
 }
