@@ -26,7 +26,7 @@
           ?>
           <div class="text-wrap">
             <p class="header"><?php echo the_title(); ?></p>
-            <p>czytaj dalej</p>
+            <p><?php pll_e('read'); ?></p>
           </div>
         </a>
       </div>

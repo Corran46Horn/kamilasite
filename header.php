@@ -114,6 +114,12 @@
               'menu_class' => 'menu d-none d-lg-flex',
               'container' => '',
             )); ?>
+            <?php wp_nav_menu(array(
+              'theme_location' => 'menu-lang',
+              'menu_class' => 'menu-lang',
+              'container' => '',
+              )); 
+            ?>
             <div
               class="hamburger hamburger--spin d-inline-block d-lg-none"
               type="button"
